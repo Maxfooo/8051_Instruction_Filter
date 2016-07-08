@@ -58,7 +58,8 @@ def parse(fileName, externalFile=False):
             bytes = int(instLine[2])
 
             instruction_table[opCode] = (mnemonic, bytes)
-
+        
+        instSetFile.close()
         return instruction_table
 
 
